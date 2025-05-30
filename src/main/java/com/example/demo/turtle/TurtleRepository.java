@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class TurtleRepository {
+public interface TurtleRepository extends JpaRepository<Turtle, Long>{
     @Query(value = "select * from turtles t where t.species like %?1% ", nativeQuery = true)
     List<Turtle> getTurtleBySpecies(String species);
 
