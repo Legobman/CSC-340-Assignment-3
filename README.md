@@ -48,6 +48,7 @@ Gets a list of all Turtles in the database.
 ]
 ```
 2. ### [`/{turtleID}`](http://localhost:8080/turtles/1) (GET)
+2. ### [`/{studentId}`](http://localhost:8080/students/1) (GET)
 Gets an individual Turtle in the system. Each Turtle is identified by a numeric `turtleID`
 
 #### Parameters
