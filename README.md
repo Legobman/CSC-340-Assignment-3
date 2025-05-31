@@ -65,7 +65,6 @@ Gets an individual Turtle in the system. Each Turtle is identified by a numeric 
   }
 ```
 3. ### [`/name`](http://localhost:8080/turtles/name?key=Eastern%20Box%20Turtle) (GET)
-3. ### [`/name`](http://localhost:8080/students/name?key=jo) (GET)
 Gets a list of turtles with a name that contains the given string.
 
 #### Parameters
@@ -84,7 +83,7 @@ Gets a list of turtles with a name that contains the given string.
   }
 ]
 ```
-4. ### [`/species/{species}`](http://localhost:8080/turtles/species/D. Coriacea) (GET)
+4. ### [`/species/{species}`](http://localhost:8080/turtles/species/D.%20Coriacea) (GET)
 Gets a list of turtles for a named species.
 
 #### Parameters
