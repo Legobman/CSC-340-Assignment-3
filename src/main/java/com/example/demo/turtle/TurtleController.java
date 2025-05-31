@@ -29,9 +29,9 @@ public class TurtleController {
     @GetMapping("/turtles/name")
     public Object getTurtlesByName(@RequestParam String key) {
         if (key != null) {
-        return turtleService.getTurtlesByName(key);
+            return turtleService.getTurtlesByName(key);
         } else {
-        return turtleService.getAllTurtles();
+            return turtleService.getAllTurtles();
         }
     }
 
