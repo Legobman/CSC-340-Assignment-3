@@ -48,7 +48,6 @@ Gets a list of all Turtles in the database.
 ]
 ```
 2. ### [`/{turtleID}`](http://localhost:8080/turtles/1) (GET)
-2. ### [`/{studentId}`](http://localhost:8080/students/1) (GET)
 Gets an individual Turtle in the system. Each Turtle is identified by a numeric `turtleID`
 
 #### Parameters
@@ -66,6 +65,7 @@ Gets an individual Turtle in the system. Each Turtle is identified by a numeric 
   }
 ```
 3. ### [`/name`](http://localhost:8080/turtles/name?key=Eastern Box Turtle) (GET)
+3. ### [`/name`](http://localhost:8080/students/name?key=jo) (GET)
 Gets a list of turtles with a name that contains the given string.
 
 #### Parameters
