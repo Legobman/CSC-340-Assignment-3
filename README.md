@@ -133,7 +133,7 @@ Update an existing Turtle.
 - Path Variable: `turtleID` &lt;integer&gt; - REQUIRED
 
 #### Request Body
-A student object with the updates.
+A turtle object with the updates.
 ```
 {
   "turtleID": 3,
@@ -153,7 +153,7 @@ A student object with the updates.
   "age": 15
 }
 ```
-8. ### [`/{turtleID}`](http://localhost:8080/turtleID/3) (DELETE)
+7. ### [`/{turtleID}`](http://localhost:8080/turtleID/3) (DELETE)
 Delete an existing Turtle.
 
 #### Parameters
