@@ -64,7 +64,7 @@ Gets an individual Turtle in the system. Each Turtle is identified by a numeric 
     "age": 10
   }
 ```
-3. ### [`/name`](http://localhost:8080/turtles/name?key=Eastern Box Turtle) (GET)
+3. ### [`/name`](http://localhost:8080/turtles/name?key=Eastern%20Box%20Turtle) (GET)
 3. ### [`/name`](http://localhost:8080/students/name?key=jo) (GET)
 Gets a list of turtles with a name that contains the given string.
 
