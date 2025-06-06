@@ -22,9 +22,6 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/turtles/createForm">Create a New Turtle</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Third</a>
-            </li>
         </ul>
     </nav>
     <h1>name: ${turtle.name}</h1>
@@ -32,9 +29,12 @@
     <div class="row">
         <div class="column">
             <ul class="list-group list-group-flush">
+              <h5 class="card-title">ID: ${turtle.turtleID?c}</h5>
               <li class="list-group-item">Description: ${turtle.description}</li>
               <li class="list-group-item">Species: ${turtle.species}</li>
               <li class="list-group-item">Age: ${turtle.age}</li>
+              <a href="/turtles/updateForm/${turtle.turtleID}" class="btn btn-primary">Update Turtle</a>
+              <a href="/turtles/delete/${turtle.turtleID}" class="btn btn-danger">Delete Turtle</a>
             </ul>
         </div>
     </div> 

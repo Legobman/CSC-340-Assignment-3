@@ -19,14 +19,11 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/turtles/createForm">Create a New Turtle</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Third</a>
-        </li>
     </ul>
 </nav>
 <div class="container" style="margin-top: 15px;" >
     <h1>${title}</h1>
-    <form id="new-turtle" action="/turtles" method="post" enctype="multipart/form-data">
+    <form id="new-turtle" action="/turtles" method="post">
         <input type="text" id="name" name="name" placeholder="Box Turtle"/>
         <input type="text" id="description" name="description" placeholder="greenish brown"/>
         <input type="text" id="species" name="species" placeholder="Common Box Turtle"/>

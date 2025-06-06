@@ -18,9 +18,6 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/turtles/createForm">Create a New Turtle</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Third</a>
-            </li>
         </ul>
     </nav>
     <h1 style="text-align:center">Hello, welcome to my gallery of turtles and tortoises!</h1>

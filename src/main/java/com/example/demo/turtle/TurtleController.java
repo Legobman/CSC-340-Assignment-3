@@ -63,7 +63,7 @@ public class TurtleController {
     }
 
     @PostMapping("/turtles")
-    public Object addTurtle(@RequestBody Turtle turtle) {
+    public Object addTurtle(Turtle turtle) {
         Turtle newTurtle = turtleService.addTurtle(turtle);
         return "redirect:/turtles/" + newTurtle.getTurtleID();
     }
@@ -85,7 +85,7 @@ public class TurtleController {
     @GetMapping("/turtles/delete/{id}")
     public Object deleteTurtle(@PathVariable Long id) {
         turtleService.deleteTurtle(id);
-        return "redirect:/turtles/";
+        return "redirect:/turtles";
     }
 
     @PostMapping("/turtles/writeFile")
