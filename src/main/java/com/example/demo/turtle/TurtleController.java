@@ -39,11 +39,9 @@ public class TurtleController {
     @GetMapping("/turtles/name")
     public Object getTurtlesByName(@RequestParam String key, Model model) {
         if (key != null) {
-            model.addAttribute("turtlesList", turtleService.getTurtlesByName(key));
-            model.addAttribute("title", "Turtles By Name: " + key);
-            return "turtles-list";
+        return turtleService.getTurtlesByName(key);
         } else {
-            return "redirect:/turtles/";
+        return turtleService.getAllTurtles();
         }
     }
 
