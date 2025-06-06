@@ -17,7 +17,7 @@
         <a class="nav-link active" aria-current="page" href="/turtles">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Second</a>
+        <a class="nav-link active" aria-current="page" href="/turtles/createForm">Create a New Turtle</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Third</a>

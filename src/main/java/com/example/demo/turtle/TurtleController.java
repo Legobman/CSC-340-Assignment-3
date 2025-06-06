@@ -3,19 +3,24 @@ package com.example.demo.turtle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TurtleController {
     
     @Autowired
     private TurtleService turtleService;
+
+    @GetMapping("/test")
+    @ResponseBody
+    public String testRoute() {
+        return "Controller is working";
+    }
 
     @GetMapping("/turtles")
     public Object getAllTurtles(Model model) {
@@ -71,13 +76,13 @@ public class TurtleController {
         return "turtles-update";
     }
 
-    @PutMapping("/turtles/{id}")
+    @PostMapping("/turtles/update/{id}")
     public Object updateTurtle(@PathVariable Long id, Turtle turtle) {
         turtleService.updateTurtle(id, turtle);
         return "redirect:/turtles/" + id;
     }
 
-    @DeleteMapping("/turtles/{id}")
+    @GetMapping("/turtles/delete/{id}")
     public Object deleteTurtle(@PathVariable Long id) {
         turtleService.deleteTurtle(id);
         return "redirect:/turtles/";
