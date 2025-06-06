@@ -18,18 +18,14 @@
         <li><a href="details.html">Eastern Box Turtle</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-    <h1>Eastern Box Turtles</h1>
+    <h1>name: ${turtle.name}</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <div class="row">
         <div class="column">
-            <img src="images\Eastern_box_turtle_in_florida.jpg" alt="Eastern Box Turtle" style="width:60%">
-            <h3>More Information About Eastern Box Turtles</h3>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">This is a eastern box turtle, a subspecies of common box turtles. They are found in the Eastern United States.</li>
-              <li class="list-group-item">Conservation status: Vulnerable</li>
-              <li class="list-group-item">Size: 4.5 to 8 in (11 to 20 cm) long</li>
-              <li class="list-group-item">Shell Color: brown to black with orange to yellow spots</li>
-              <li class="list-group-item">Diet: Omnivore, eating various insects to fruit to mushrooms and other plant matter</li>
+              <li class="list-group-item">Description: ${turtle.description}</li>
+              <li class="list-group-item">Species: ${turtle.species}</li>
+              <li class="list-group-item">Age: ${turtle.age}</li>
             </ul>
         </div>
     </div> 
