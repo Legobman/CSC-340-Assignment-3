@@ -10,6 +10,6 @@ public interface TurtleRepository extends JpaRepository<Turtle, Long>{
     @Query(value = "select * from turtles t where t.species like %?1% ", nativeQuery = true)
     List<Turtle> getTurtleBySpecies(String species);
 
-    @Query(value = "select * from students t where s.name like %?1% ", nativeQuery = true)
+    @Query(value = "select * from turtles t where t.name like %?1% ", nativeQuery = true)
     List<Turtle> getTurtlesByName(String name);
 }

@@ -21,16 +21,19 @@
         </ul>
     </nav>
     <h1 style="text-align:center">Hello, welcome to my gallery of turtles and tortoises!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <form action="/turtles/name" method="get">
+        <input type="text" name="key" placeholder="Search By Name &#128270;">
+    </form>
     <#list turtlesList as turtle>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">${turtle.name}</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">${turtle.species}</h6>
-                    <p class="card-text">${turtle.description}</p>
-                    <a href="/turtles/${turtle.turtleID}" class="card-link">View</a>
-                </div>
-            </div>
-        </#list>
+      <div class="card">
+          <div class="card-body">
+              <h5 class="card-title">${turtle.name}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">${turtle.species}</h6>
+              <p class="card-text">${turtle.description}</p>
+              <a href="/turtles/${turtle.turtleID}" class="card-link">View</a>
+          </div>
+      </div>
+    </#list>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
